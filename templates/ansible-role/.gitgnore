@@ -1,0 +1,9 @@
+.vagrant
+.ansible
+.direnv
+*.crt
+*.key
+*.srl
+*.csr
+result
+result-*
