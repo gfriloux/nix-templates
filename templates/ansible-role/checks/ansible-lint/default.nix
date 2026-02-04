@@ -16,6 +16,6 @@ pkgs.runCommand "check-ansible-lint" {
   mkdir -p "$ANSIBLE_LOCAL_TEMP" "$ANSIBLE_REMOTE_TEMP"
 
   echo "→ Running ansible-lint"
-  ansible-lint --offline --profile production --exclude tests $src
+  ansible-lint --offline --profile production $src --exclude tests
   touch $out
 ''
