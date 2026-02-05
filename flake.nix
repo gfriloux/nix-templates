@@ -21,5 +21,8 @@
           title = "nix-templates";
         };
       };
+      templates = {
+        ansible-role.description = "Basic tooling to work on ansible roles the way i want.";
+      };
     };
 }
