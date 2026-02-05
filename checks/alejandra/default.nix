@@ -4,6 +4,6 @@ pkgs.runCommand "check-alejandra" {
   buildInputs = [pkgs.alejandra];
 } ''
   echo "→ Checking Nix formatting"
-  alejandra --check .
+  alejandra --check $src
   touch $out
 ''

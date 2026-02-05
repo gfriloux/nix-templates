@@ -1,8 +1,7 @@
-{ pkgs, ... }:
-
+{pkgs, ...}:
 pkgs.runCommand "check-ansible-lint" {
   src = ./../..;
-  buildInputs = [ pkgs.ansible-lint ];
+  buildInputs = [pkgs.ansible-lint];
 } ''
 
   set -euo pipefail
