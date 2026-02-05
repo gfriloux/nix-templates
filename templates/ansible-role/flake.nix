@@ -18,6 +18,7 @@
         namespace = "ansible_role";
         meta = {
           name = "ansible_role";
+          description = "Basic tooling to work on ansible roles"
           title = "ansible_role";
         };
       };
