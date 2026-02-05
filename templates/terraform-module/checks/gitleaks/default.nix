@@ -1,5 +1,5 @@
 {pkgs, ...}:
-pkgs.runCommand "check-shfmt" {
+pkgs.runCommand "check-gitleaks" {
   src = ./../..;
   buildInputs = [pkgs.gitleaks pkgs.git];
 } ''
