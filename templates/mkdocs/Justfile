@@ -1,0 +1,8 @@
+serve:
+	process-compose --no-server
+
+build:
+	pipenv run mkdocs build
+
+@start:
+	zellij --layout shells/default/zellij-layout.kdl

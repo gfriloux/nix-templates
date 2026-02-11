@@ -8,6 +8,12 @@ collection of templates to work on various project types.
 nix flake init --template github:gfriloux/nix-templates#ansible-role
 ```
 
+## mkdocs
+
+```
+nix flake init --template github:gfriloux/nix-templates#mkdocs
+```
+
 ## terraform-module
 
 ```
