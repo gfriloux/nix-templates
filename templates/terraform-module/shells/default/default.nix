@@ -1,10 +1,6 @@
 {
-  lib,
   inputs,
-  namespace,
-  pkgs,
   mkShell,
-  config,
   system,
   ...
 }: let
