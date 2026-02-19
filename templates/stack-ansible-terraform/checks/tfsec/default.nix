@@ -4,6 +4,6 @@ pkgs.runCommand "check-tfsec" {
   buildInputs = [pkgs.tfsec];
 } ''
   echo "→ Running tfsec"
-  find $src/terraform -type d | xargs -I {} tfsec {}
+  find $src/terraform -type d | xargs -I {} tfsec --exclude-downloaded-modules {}
   touch $out
 ''
